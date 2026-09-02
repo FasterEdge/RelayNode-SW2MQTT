@@ -20,7 +20,7 @@
 4. Run:
 
 ```bash
-cd software/ESP8266/platformio_ide
+cd ESP8266/platformio_ide
 pio run
 pio run -t upload
 pio device monitor

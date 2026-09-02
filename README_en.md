@@ -7,8 +7,8 @@
 ### 1. Introduction
 
 - **Purpose**: Converts four dry-contact or switch inputs into Wi-Fi MQTT state messages for edge-device and industrial digital-input integration.
-- **Hardware Project**: The root `sw2mqtt_main.eprj2` is a JLCEDA Pro project, with component information in `BOM.md` and `BOM.txt`.
-- **Firmware Location**: `software/ESP8266/platformio_ide/` contains the PlatformIO Arduino firmware for ESP-12F, while `software/README.md` provides firmware operating instructions.
+- **Hardware Project**: The `hardware/sw2mqtt_main.eprj2` is a JLCEDA Pro project, with component information in `BOM.md` and `BOM.txt`.
+- **Firmware Location**: `firmware/ESP8266/platformio_ide/` contains the PlatformIO Arduino firmware for ESP-12F, while `firmware/README.md` provides firmware operating instructions.
 
 ### 2. Hardware Design
 
@@ -36,7 +36,7 @@
 - **Configuration File**: Use `include/config.example.h` as the template for Wi-Fi, MQTT, topic prefix, debounce and heartbeat settings; never commit real secrets or production credentials.
 
 ```bash
-cd software/ESP8266/platformio_ide
+cd firmware/ESP8266/platformio_ide
 pio run
 pio run -t upload
 pio device monitor
@@ -46,10 +46,10 @@ pio device monitor
 
 ### 5. Directory Guide
 
-- **`sw2mqtt_main.eprj2`**: JLCEDA Pro hardware project.
+- **`hardware/sw2mqtt_main.eprj2`**: JLCEDA Pro hardware project.
 - **`BOM.md` / `BOM.txt`**: Components, net connections and production verification information.
-- **`software/README.md`**: Firmware features, topics and flashing procedure.
-- **`software/ESP8266/platformio_ide/`**: PlatformIO project, configuration template and ESP8266 source code.
+- **`firmware/README.md`**: Firmware features, topics and flashing procedure.
+- **`firmware/ESP8266/platformio_ide/`**: PlatformIO project, configuration template and ESP8266 source code.
 
 ### 6. License
 

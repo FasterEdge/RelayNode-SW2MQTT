@@ -7,8 +7,8 @@
 ### 一、项目简介
 
 - **用途**: 将四路干接点或开关输入转换为 Wi-Fi MQTT 状态消息，适用于边缘设备和工业开关量接入。
-- **硬件工程**: 根目录 `sw2mqtt_main.eprj2` 为嘉立创 EDA 专业版工程，`BOM.md` 与 `BOM.txt` 提供物料信息。
-- **固件位置**: `software/ESP8266/platformio_ide/` 包含 ESP-12F 的 PlatformIO Arduino 固件；`software/README.md` 提供固件操作说明。
+- **硬件工程**: `hardware/sw2mqtt_main.eprj2` 为嘉立创 EDA 专业版工程，`BOM.md` 与 `BOM.txt` 提供物料信息。
+- **固件位置**: `firmware/ESP8266/platformio_ide/` 包含 ESP-12F 的 PlatformIO Arduino 固件；`firmware/README.md` 提供固件操作说明。
 
 ### 二、硬件设计
 
@@ -36,7 +36,7 @@
 - **配置文件**: 以 `include/config.example.h` 为模板配置 Wi-Fi、MQTT、主题前缀、防抖和心跳参数；不得提交真实密钥或生产凭据。
 
 ```bash
-cd software/ESP8266/platformio_ide
+cd firmware/ESP8266/platformio_ide
 pio run
 pio run -t upload
 pio device monitor
@@ -46,10 +46,10 @@ pio device monitor
 
 ### 五、目录说明
 
-- **`sw2mqtt_main.eprj2`**: 嘉立创 EDA 专业版硬件工程。
+- **`hardware/sw2mqtt_main.eprj2`**: 嘉立创 EDA 专业版硬件工程。
 - **`BOM.md` / `BOM.txt`**: 物料、网络连接和生产验证信息。
-- **`software/README.md`**: 固件功能、主题和烧录步骤。
-- **`software/ESP8266/platformio_ide/`**: PlatformIO 工程、配置模板和 ESP8266 源码。
+- **`firmware/README.md`**: 固件功能、主题和烧录步骤。
+- **`firmware/ESP8266/platformio_ide/`**: PlatformIO 工程、配置模板和 ESP8266 源码。
 
 ### 六、许可证
 
