@@ -1,0 +1,30 @@
+# RelayNode-SW2MQTT 忽略规则 (PlatformIO / 嵌入式固件)
+
+# PlatformIO 构建目录与本地状态
+.pio/
+.vscode/
+.pioenvs/
+.piolibdeps/
+
+# 编译产物
+build/
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.eep
+*.map
+*.lst
+*.sym
+*.a
+*.d
+
+# Arduino IDE 输出
+*.log
+*.tmp
+*.bak
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
